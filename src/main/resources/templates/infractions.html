@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infractions</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3a4468;
+            color: white;
+            padding: 10px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0 20px;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 200px;
+        }
+
+        nav ul li a:hover {
+            background-color: #f3c93e;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .infraction-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .infraction-table th, .infraction-table td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .infraction-table th {
+            background-color: #3a4468;
+            color: white;
+            text-align: center;
+        }
+
+        .infraction-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .infraction-table tr:hover {
+            background-color: #ddd;
+        }
+
+        .payment-button {
+            background-color: #3a4468;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 200px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            width: 100px; /* Largeur fixe pour tous les boutons */
+            text-align: center;
+        }
+
+        .payment-button:hover {
+            background-color: #f3c93e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <span style="text-align: left; font-family: 'Poppins', sans-serif; font-weight: bold;
+                     font-size: 20px; text-transform: uppercase; color: #fff; display: inline-block; 
+                     padding: 10px 20px; border-radius: 50% 20% / 10% 40%; background-color: #f3c93e;
+                     margin-left: -240px; margin-top: -7px;">
+                        Infra-RADAR
+                    </span>
+                </li>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="infractions.html">Mes Infractions</a></li>
+                <li><a href="payment.html">Paiement</a></li>
+                <li><a href="objection.html">Réclamation</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="index.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+		<!-- <div class="row g-4">
+		                                <div class="col-lg-6" th:each="productB: ${productsBreakfast}">
+		                                   <a th:href="@{product/detail/{id}(id=${productB.id})}">
+											    <div class="d-flex align-items-center">
+		                                        <img class="flex-shrink-0 img-fluid rounded" src="/img/menu-1.jpg" alt="" style="width: 80px;">
+		                                        <div class="w-100 d-flex flex-column text-start ps-4">
+		                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+		                                                <span th:text="${productB.name}"></span>
+		                                                <span class="text-primary" th:text="${productB.prix}"></span>
+		                                            </h5>
+		                                            <small class="fst-italic" th:text="${productB.description}"></small>
+		                                        </div>
+		                                    </div>
+											   
+										   </a>
+		                                </div>
+		                            </div> -->
+        <h2 style="color: #3a4468;">Infractions Récentes</h2>
+        <table class="infraction-table">
+            <thead>
+                <tr>
+                    <th>Type d'Infraction</th>
+                    <th>Date</th>
+                    <th>Lieu</th>
+                    <th>Vitesse (km/h)</th>
+                    <th>Points</th>
+                    <th>Amende (DH)</th>
+                    <th>Numéro Radar</th>
+                    <th>Voiture Impliquée</th>
+                    <th>État de l'Infraction</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Excès de vitesse</td>
+                    <td>2024-05-28</td>
+                    <td>Rue de la Liberté</td>
+                    <td>80</td>
+                    <td>2</td>
+                    <td>100</td>
+                    <td>RADAR123</td>
+                    <td>ABC123</td>
+                    <td>Impayé</td>
+                    <td><a href="payment.html" class="payment-button">Payer</a></td>
+                </tr>
+                <tr>
+                    <td>Stationnement interdit</td>
+                    <td>2024-05-25</td>
+                    <td>Rue du Commerce</td>
+                    <td>N/A</td>
+                    <td>0</td>
+                    <td>50</td>
+                    <td>RADAR456</td>
+                    <td>XYZ789</td>
+                    <td>Payé</td>
+                    <td><a href="#" class="payment-button">Payer</a></td>
+                </tr>
+                <!-- Ajoutez d'autres infractions ici -->
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
+

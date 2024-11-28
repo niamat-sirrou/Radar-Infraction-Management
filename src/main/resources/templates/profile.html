@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informations Personnelles</title>
+    <style>
+        /* CSS */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #3a4468;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 0 20px;
+            font-size: 1.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 200px;
+        }
+
+        nav ul li a:hover {
+            background-color: #f3c93e;
+        }
+
+        .profile-section {
+            padding: 2rem;
+        }
+
+        .profile-details {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-details h2 {
+            margin-top: 0;
+            color: #3a4468;
+            font-size: 1.25rem;
+            border-bottom: 1px solid #f3c93e;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .profile-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem; /* Ajouter un espace entre les lignes */
+        }
+
+        .profile-info div {
+            flex: 1;
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-info div:not(:last-child) {
+            margin-right: -2rem; /* Réduire l'espacement entre les colonnes */
+        }
+
+        .profile-info strong {
+            font-weight: bold;
+            color: #f3c93e;
+            margin-right: 0.5rem;
+            font-size: 1.2rem; /* Augmenter la taille de la police */
+        }
+
+        .profile-info p {
+            margin: 0;
+            color: #3a4468;
+            font-size: 1.1rem; /* Augmenter la taille de la police */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <span style="text-align: left; font-family: 'Poppins', sans-serif; font-weight: bold;
+                     font-size: 20px; text-transform: uppercase; color: #fff; display: inline-block; 
+                     padding: 10px 20px; border-radius: 50% 20% / 10% 40%; background-color: #f3c93e;
+                     margin-left: -300px; margin-top: -7px;">
+                        Infra-RADAR
+                    </span>
+                </li>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="infractions.html">Mes Infractions</a></li>
+                <li><a href="payment.html">Paiement</a></li>
+                <li><a href="objection.html">Réclamation</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="index.html">Déconnexion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="profile-section">
+        <div class="profile-details">
+            <h2 style="font-size: 1.5rem;">Informations Personnelles</h2>
+            <div class="profile-info">
+                <div>
+                    <strong>Nom d'utilisateur:</strong>
+                    <p>JohnDoe</p>
+                </div>
+                <div>
+                    <strong>Nom complet:</strong>
+                    <p>John Doe</p>
+                </div>
+            </div>
+            <div class="profile-info">
+                <div>
+                    <strong>Email:</strong>
+                    <p>johndoe@example.com</p>
+                </div>
+                <div>
+                    <strong>Numéro de Téléphone:</strong>
+                    <p>+1234567890</p>
+                </div>
+            </div>
+            <div class="profile-info">
+                <div>
+                    <strong>Pays:</strong>
+                    <p>France</p>
+                </div>
+                <div>
+                    <strong>Adresse:</strong>
+                    <p>123 Rue de la Liberté</p>
+                </div>
+            </div>
+            <div class="profile-info">
+                <div>
+                    <strong>Numéro CIN:</strong>
+                    <p>ABC12345</p>
+                </div>
+                <!-- Ajouter plus d'informations si nécessaire -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>

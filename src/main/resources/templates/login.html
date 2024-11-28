@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            margin-top: -10px;
+        }
+
+        .form-container {
+            background-color: #fff;
+            width: 400px;
+            max-width: 450px; /* Limitation de la largeur maximale */
+            padding: 60px; /* Augmentation de la marge intérieure */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        h2 {
+            color: #3a4468;
+            margin-bottom: 30px;
+            margin-top: -0px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #3a4468;
+            text-align: left; /* Alignement à gauche pour une meilleure lisibilité */
+        }
+
+        input, select {
+            width: 100%;
+            padding: 13px; /* Augmentation de la taille du texte */
+            margin-bottom: 30px; /* Augmentation de l'espace entre les champs */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3a4468;
+            color: #fff;
+            padding: 12px 20px; /* Augmentation de la taille du bouton */
+            border: none;
+            border-radius: 200px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #f3c93e;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #888;
+        }
+
+        .form-footer a {
+            color: #3a4468; /* Changement de la couleur du lien */
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline; /* Ajout de soulignement au survol */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <h2>Login</h2>
+                <form method="post" role="form">
+                    <label for="username">Username:</label>
+                    <input type="email" id="username" name="username" placeholder="Enter your Username" required>
+                    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+                    
+                    <button type="submit">Login</button>
+                </form>
+                <p class="form-footer">Don't have an account? <a href="inscription.html">Register</a></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+
